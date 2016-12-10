@@ -2,7 +2,6 @@ import sys
 d=sys.stdin.readlines()
 c=5
 for e in d:
-   e=e.strip()
    for x in e:
        j=0
        if x=='D' and c not in(5,10,12,13,9):
