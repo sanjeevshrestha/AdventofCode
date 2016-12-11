@@ -1,6 +1,7 @@
 import sys,re
 d=sys.stdin.readlines()
-b=o={}
+b={}
+o={}
 c=(61,17)
 f=False
 
