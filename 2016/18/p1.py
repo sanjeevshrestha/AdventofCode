@@ -23,10 +23,17 @@ def count_safe_tiles(limit):
         for ix in range(len(curr_row)):
             next_row.append(is_tile(ix, curr_row))
         tiles.append(next_row)
-    return "\n".join("".join(x) for x in tiles).count('.')
+    return "\n".join("".join(x) for x in tiles).count('.'),tiles
 
+count,xtiles=count_safe_tiles(limit1)
+print "Part 1 :", count
+# print "Tiles\n========"
+# print "\n".join("".join(x) for x in xtiles)
 
-print "Part 1 :", count_safe_tiles(limit1)
-print "Part 2 :", count_safe_tiles(limit2)
+count,xtiles=count_safe_tiles(limit2)
+
+print "Part 2 :", count
+# print "Tiles\n========"
+# print "\n".join("".join(x) for x in xtiles)
 
 
